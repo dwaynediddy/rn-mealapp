@@ -1,18 +1,16 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   Text,
   View,
-} from 'react-native';
+} from 'react-native'
+
+import RNBootSplash from "react-native-bootsplash"
 
 const App = () => {
+  useEffect(() => {
+    RNBootSplash.hide({ fade: true });
+  })
+    
   return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
           <Text>Meal App</Text>

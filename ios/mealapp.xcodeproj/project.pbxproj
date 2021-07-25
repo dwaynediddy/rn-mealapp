@@ -11,6 +11,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		15B2AE2826ADB3BE004EE84F /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B2AE2726ADB3BE004EE84F /* BootSplash.storyboard */; };
 		24E7DD3F75044E43DA28881B /* libPods-mealapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 774397390ECD31F57594B054 /* libPods-mealapp.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		93825DE0F29E3D04876063D4 /* libPods-mealapp-mealappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DE5FCDE6821657944D65C6 /* libPods-mealapp-mealappTests.a */; };
@@ -36,6 +37,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mealapp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mealapp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mealapp/main.m; sourceTree = "<group>"; };
+		15B2AE2726ADB3BE004EE84F /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = mealapp/BootSplash.storyboard; sourceTree = "<group>"; };
 		3C7854CE7A539502D3978D31 /* Pods-mealapp-mealappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mealapp-mealappTests.debug.xcconfig"; path = "Target Support Files/Pods-mealapp-mealappTests/Pods-mealapp-mealappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		49DE5FCDE6821657944D65C6 /* libPods-mealapp-mealappTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mealapp-mealappTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		774397390ECD31F57594B054 /* libPods-mealapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mealapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				15B2AE2726ADB3BE004EE84F /* BootSplash.storyboard */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -114,7 +117,6 @@
 				3C7854CE7A539502D3978D31 /* Pods-mealapp-mealappTests.debug.xcconfig */,
 				A8AE7209DDC8F2D1D0456606 /* Pods-mealapp-mealappTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -243,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B2AE2826ADB3BE004EE84F /* BootSplash.storyboard in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
