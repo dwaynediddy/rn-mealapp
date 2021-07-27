@@ -6,22 +6,22 @@ import {
   View,
 } from 'react-native'
 
-import { NavigationContainer } from '@react-navigation/native';
-
-
 import RNBootSplash from "react-native-bootsplash"
 
 import BottomNavigation from "./src/components/BottomNavigation"
+import DrawNavigation from "./src/components/DrawNavigation"
+
 
 const App = () => {
   useEffect(() => {
     RNBootSplash.hide({ fade: true });
   })
     
-  return (
-        <NavigationContainer>
+  return ( 
+    <>
+          {/* <DrawNavigation /> */}
           <BottomNavigation />
-        </NavigationContainer>
+    </>
   )
 }
 

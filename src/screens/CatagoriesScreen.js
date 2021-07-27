@@ -1,11 +1,19 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Button, FlatList } from 'react-native'
+
+import { CATEGORIES } from '../data/Dummy-Data'
+
+const renderGridItem = itemData => {
+    return <View style={styles.screen}><Text>{itemData.item.title}</Text></View>
+}
 
 const CatagoriesScreen = () => {
     return (
-        <View style={styles.screen}>
-            <Text>Meal Catagories</Text>
-        </View>
+        <FlatList 
+        // keyExtract={(item, index ) => id} needed in older versions of RN
+        data={CATEGORIES} 
+        renderItem={renderGridItem} 
+        numColumns={2} />
     )
 }
 

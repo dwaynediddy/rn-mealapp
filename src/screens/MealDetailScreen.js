@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 const MealDetailScreen = () => {
     return (
         <View style={styles.screen}>
-            <Text>Meal Detail Screen</Text>
+            <Text>Meal Details</Text>
         </View> 
     )
 }
