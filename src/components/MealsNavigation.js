@@ -24,7 +24,7 @@ const MealsNavigation = () => {
                     initialParams={{ title: 'me' }}
                     />
                 <Stack.Screen
-                    name="Meals"
+                    name="Details"
                     component={MealDetailScreen}
                     initialParams={{ title: 'Meal Details' }}
                     />
