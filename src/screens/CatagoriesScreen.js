@@ -1,13 +1,21 @@
 import React from 'react'
-import { StyleSheet, Text, View, Button, FlatList } from 'react-native'
+import { StyleSheet, Text, View, Button, FlatList, TouchableOpacity } from 'react-native'
 
 import { CATEGORIES } from '../data/Dummy-Data'
 
-const renderGridItem = itemData => {
-    return <View style={styles.screen}><Text>{itemData.item.title}</Text></View>
-}
 
-const CatagoriesScreen = () => {
+const CatagoriesScreen = ({ route, navigation }) => {
+    const renderGridItem = itemData => {
+        return (
+            <TouchableOpacity 
+            onPress={() => navigation.navigate('Catagory')}
+            >
+                <View style={styles.gridItem}>
+                    <Text>{itemData.item.title}</Text>
+                </View>
+            </TouchableOpacity>
+            )
+    }
     return (
         <FlatList 
         // keyExtract={(item, index ) => id} needed in older versions of RN
@@ -24,5 +32,10 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    gridItem: {
+        flex: 1,
+        margin: 15,
+        height: 150,
     }
 })

@@ -8,13 +8,11 @@ import { StyleSheet, Text, View } from 'react-native'
 import CatagoriesScreen from "../screens/CatagoriesScreen"
 import MealDetailScreen from "../screens/MealDetailScreen"
 
-import DrawNavigation from './DrawNavigation'
-
 const Tab = createBottomTabNavigator()
 
 const BottomNavigation = () => {
     return (
-        <NavigationContainer>
+        <NavigationContainer style={styles.screen}>
             <Tab.Navigator>
                 <Tab.Screen name="Meals" component={CatagoriesScreen} />
                 <Tab.Screen name="Details" component={MealDetailScreen} />
@@ -26,4 +24,8 @@ const BottomNavigation = () => {
 
 export default BottomNavigation
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    screen: {
+        backgroundColor: 'red'
+    }
+})

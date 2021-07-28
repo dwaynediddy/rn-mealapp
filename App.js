@@ -6,9 +6,12 @@ import {
   View,
 } from 'react-native'
 
+import { NavigationContainer } from '@react-navigation/native'
+
 import RNBootSplash from "react-native-bootsplash"
 
 import BottomNavigation from "./src/components/BottomNavigation"
+import MealsNavigation from './src/components/MealsNavigation'
 import DrawNavigation from "./src/components/DrawNavigation"
 
 
@@ -18,10 +21,11 @@ const App = () => {
   })
     
   return ( 
-    <>
+      <>
           {/* <DrawNavigation /> */}
-          <BottomNavigation />
-    </>
+          <MealsNavigation />
+          {/* <BottomNavigation /> */}
+      </>
   )
 }
 
