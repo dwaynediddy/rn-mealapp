@@ -1,16 +1,20 @@
 import React from 'react'
 import { StyleSheet, Text, View, Button } from 'react-native'
 
-const CatagoryMeal = ({ navigation }) => {
+import { CATEGORIES } from '../data/Dummy-Data'
+
+
+const CatagoryMeal = ({ route, navigation }) => {
     return (
-        
         <View style={styles.screen}>
-                <Text>'Catagory' Meals</Text>
-                    <Button
-                        title='Details'
-                        onPress={() => navigation.navigate('Details')}
-                    />
-            </View>
+            <Text>{route.params.title}</Text>
+                <Button
+                    title='Details'
+                    onPress={() => navigation.navigate('Details',{
+                        catagoryId: route.params.catagory
+                    })}
+                />
+        </View>
         
     )
 }

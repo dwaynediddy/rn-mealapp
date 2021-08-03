@@ -21,7 +21,6 @@ const MealsNavigation = () => {
                 <Stack.Screen
                     name="Catagory"
                     component={CatagoryMeal}
-                    initialParams={{ title: 'me' }}
                     />
                 <Stack.Screen
                     name="Details"

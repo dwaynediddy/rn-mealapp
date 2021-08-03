@@ -8,7 +8,13 @@ const CatagoriesScreen = ({ route, navigation }) => {
     const renderGridItem = itemData => {
         return (
             <TouchableOpacity 
-            onPress={() => navigation.navigate('Catagory')}
+                style={styles.gridItem}
+                onPress={() => {
+                    navigation.navigate('Catagory', {
+                        catagoryId: itemData.item.id,
+                        title: itemData.item.title,
+                    })
+      }}
             >
                 <View style={styles.gridItem}>
                     <Text>{itemData.item.title}</Text>
