@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, FlatList } from 'react-native'
-import { CATEGORIES } from '../data/Dummy-Data'
+import { MEALS } from '../data/Dummy-Data'
 
 const MealDetailScreen = ({ route }) => {
 
@@ -13,7 +13,7 @@ const MealDetailScreen = ({ route }) => {
     }
     return (
         <FlatList 
-        data={CATEGORIES} 
+        data={MEALS} 
         renderItem={renderTitleItem} 
         // numColumns={2} 
         />
