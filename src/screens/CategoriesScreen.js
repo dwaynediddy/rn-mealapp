@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, Button, FlatList, TouchableOpacity } from 'react-native'
 
-import CATEGORIES from '../data/Dummy-Data'
+import { CATEGORIES } from '../data/Dummy-Data'
 
 
 const CategoriesScreen = ({ navigation }) => {

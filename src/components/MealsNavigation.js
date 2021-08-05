@@ -16,7 +16,7 @@ const MealsNavigation = () => {
                 <Stack.Screen
                     name="Categories"
                     component={CategoriesScreen}
-                    options={{ title: 'Catagories' }}
+                    options={{ title: 'Categories' }}
                     />
                 <Stack.Screen
                     name="Category"

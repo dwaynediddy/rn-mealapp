@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, FlatList } from 'react-native'
-import { MEALS } from '../data/Dummy-Data'
+import { CATEGORIES } from '../data/Dummy-Data'
 
 const MealDetailScreen = ({ route }) => {
 

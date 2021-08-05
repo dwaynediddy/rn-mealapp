@@ -6,4 +6,4 @@ class Category {
     }
 }
 
-export default Catagory
+export default Category

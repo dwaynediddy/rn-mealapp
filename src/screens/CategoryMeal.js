@@ -12,7 +12,7 @@ const CategoryMeal = ({ route, navigation }) => {
                 <Button
                     title='Details'
                     onPress={() => navigation.navigate('Details',{
-                        categoryId: route.params.catagory
+                        categoryId: route.params.category
                     })}
                 />
         </View>
