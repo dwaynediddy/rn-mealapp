@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import { NavigationContainer } from '@react-navigation/native'
 
-import CatagoriesScreen from "../screens/CatagoriesScreen"
+import CategoriesScreen from "../screens/CategoriesScreen"
 import MealDetailScreen from "../screens/MealDetailScreen"
 
 const Drawer = createDrawerNavigator()
@@ -13,7 +13,7 @@ const DrawNavigation = () => {
     return (
         <NavigationContainer>
             <Drawer.Navigator>
-                <Drawer.Screen name="Meals" component={CatagoriesScreen} />
+                <Drawer.Screen name="Meals" component={CategoriesScreen} />
                 <Drawer.Screen name="Details" component={MealDetailScreen} />
             </Drawer.Navigator>
         </NavigationContainer>

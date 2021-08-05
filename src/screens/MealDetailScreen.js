@@ -1,13 +1,25 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, FlatList } from 'react-native'
+import { MEALS } from '../data/Dummy-Data'
 
-const MealDetailScreen = () => {
+const MealDetailScreen = ({ route }) => {
+
+    const renderTitleItem = itemData => {
+        return (
+            <View style={styles.screen}>
+                    <Text>{itemData.item.title}</Text>   
+            </View>
+            )
+    }
     return (
-        <View style={styles.screen}>
-            <Text>Meal Details</Text>
-        </View> 
+        <FlatList 
+        data={CATEGORIES} 
+        renderItem={renderTitleItem} 
+        // numColumns={2} 
+        />
     )
 }
+
 
 export default MealDetailScreen
 

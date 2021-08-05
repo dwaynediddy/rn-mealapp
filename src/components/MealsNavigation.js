@@ -3,8 +3,8 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
-import CatagoriesScreen from '../screens/CatagoriesScreen'
-import CatagoryMeal from '../screens/CatagoryMeal'
+import CategoriesScreen from '../screens/CategoriesScreen'
+import CategoryMeal from '../screens/CategoryMeal'
 import MealDetailScreen from '../screens/MealDetailScreen'
 
 const Stack = createStackNavigator()
@@ -14,18 +14,18 @@ const MealsNavigation = () => {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen
-                    name="Catagories"
-                    component={CatagoriesScreen}
+                    name="Categories"
+                    component={CategoriesScreen}
                     options={{ title: 'Catagories' }}
                     />
                 <Stack.Screen
-                    name="Catagory"
-                    component={CatagoryMeal}
+                    name="Category"
+                    component={CategoryMeal}
                     />
                 <Stack.Screen
                     name="Details"
                     component={MealDetailScreen}
-                    initialParams={{ title: 'Meal Details' }}
+                    // initialParams={{ title: 'Meal Details' }}
                     />
             </Stack.Navigator>
         </NavigationContainer>
